@@ -1,0 +1,514 @@
+@font-face {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  src: url("./fonts/trebuc.woff");
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f4f4f4;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 5px;
+  background: #f4f4f4;
+}
+::-webkit-scrollbar-thumb {
+  background: #dad7d7;
+}
+
+body {
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 0 auto;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.openMenu {
+  visibility: hidden;
+}
+
+.closeMenu {
+  visibility: hidden;
+}
+
+.mobileNav {
+  display: none;
+}
+
+.navButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  width: 100%;
+  height: 49px;
+  background-color: #389cd6;
+  color: white;
+  font-weight: 400;
+}
+
+.navButtons span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  height: 100%;
+}
+
+.subMenu {
+  width: 100%;
+  height: 49px;
+  margin: 0 auto;
+  background-color: #9d8e8e;
+  position: fixed;
+  display: none;
+}
+
+.subMenu div span {
+  cursor: pointer;
+}
+
+.aboutMenu {
+  height: 49px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 4%;
+  display: none;
+  position: fixed;
+  width: 1920px;
+  padding-left: 15%;
+}
+
+.productsMenu {
+  height: 49px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 4%;
+  display: none;
+  position: fixed;
+  width: 1920px;
+  padding-left: 15%;
+}
+
+.intimateHealthMenu {
+  height: 49px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 4%;
+  display: none;
+  position: fixed;
+  width: 1920px;
+  padding-left: 15%;
+}
+
+.infoSection {
+  margin: 0 auto;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.infoSectionImg {
+  max-width: 100%;
+}
+
+.helpTitle {
+  color: #389cd6;
+  font-size: 39px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.infoSection p {
+  font-size: 20px;
+  margin: auto;
+  color: #7b7070;
+  width: 550px;
+  text-align: center;
+  letter-spacing: 0.4px;
+}
+
+.infoSectionIcons {
+  margin: 40px auto 20px;
+  max-width: 1132px;
+}
+
+.interestsText {
+  color: #389cd6;
+  font-size: 39px;
+  text-align: center;
+  padding-top: 50px;
+  max-width: 744px;
+  margin: 0px auto 40px;
+}
+
+.productSection {
+  margin-bottom: 100px;
+}
+
+.productSection h2 {
+  color: #389cd6;
+  font-size: 39px;
+  text-align: center;
+  padding-top: 50px;
+  max-width: 744px;
+  margin: 60px auto;
+}
+
+.products {
+  width: 1134px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+}
+
+.product {
+  width: 356px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 16px;
+}
+
+.product img {
+  width: 356px;
+}
+
+.product p {
+  font-size: 20px;
+  color: #7b7070;
+  width: 292px;
+  margin: 20px auto;
+}
+
+.wellnessProduct span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+  height: 73px;
+  background-color: #389cd6;
+  width: 100%;
+  border-radius: 0 0 16px 16px;
+}
+
+.activeProduct span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+  height: 73px;
+  background-color: #309d5f;
+  width: 100%;
+  border-radius: 0 0 16px 16px;
+}
+
+.agecareProduct span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+  height: 73px;
+  background-color: #ee6381;
+  width: 100%;
+  border-radius: 0 0 16px 16px;
+}
+
+.banner {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.bannerMobile {
+  display: none;
+}
+
+.discoveriesSection h2 {
+  color: #389cd6;
+  font-size: 39px;
+  text-align: center;
+  padding-top: 50px;
+  margin: 20px auto 100px;
+  letter-spacing: 0.78px;
+}
+
+.discoveries {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  margin-bottom: 10px;
+}
+
+.discoveries div {
+  display: flex;
+  flex-direction: column;
+  width: 357px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 16px;
+}
+
+.discoveries img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.discoveries span {
+  color: #7b7070;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 0 30px;
+}
+
+.seemoreButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.seemoreButton button {
+  font-size: 20px;
+  color: white;
+  border: none;
+  background-color: #389cd6;
+  border-radius: 16px;
+  cursor: pointer;
+  height: 64px;
+  width: 356px;
+  margin: 80px 0;
+  font-weight: bold;
+}
+
+.seemoreButton button:hover {
+  background-color: #3faeee;
+}
+
+footer {
+  height: 242px;
+  width: 100%;
+  background-color: #389cd6;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  color: white;
+  padding-top: 60px;
+}
+footer span {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footerImgs {
+  display: flex;
+  gap: 20%;
+  justify-content: space-around;
+}
+
+.closeMenu {
+  display: none;
+}
+
+@media (max-width: 1190px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .aboutMenu {
+    gap: 4%;
+    width: 100%;
+    padding-left: 15%;
+  }
+
+  .productsMenu {
+    gap: 4%;
+    width: 100%;
+    padding-left: 15%;
+  }
+
+  .intimateHealthMenu {
+    gap: 4%;
+    width: 100%;
+    padding-left: 15%;
+  }
+
+  .helpTitle {
+    font-size: 36px;
+  }
+
+  .infoSection p {
+    width: 50%;
+  }
+
+  .infoSectionIcons {
+    margin: 40px auto 20px;
+    width: 90%;
+  }
+
+  .interestsText {
+    width: 50%;
+  }
+
+  .slider {
+    width: 80vw;
+    overflow: auto;
+    margin: auto;
+  }
+
+  .products {
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .product {
+    margin: 10px 10px;
+  }
+
+  .discoveriesSection h2 {
+    font-size: 36px;
+    width: 90%;
+  }
+
+  .sliderDiscoveries {
+    width: 80vw;
+    margin: 0 auto;
+    overflow-x: auto;
+  }
+
+  .discoveries {
+    display: flex;
+    justify-content: flex-start;
+    gap: 4%;
+  }
+
+  .discoveries img {
+    width: 357px;
+    margin-bottom: 0px;
+  }
+
+  .footerImgs {
+    gap: 0;
+    justify-content: space-between;
+    margin: 0 6%;
+  }
+
+  .seemoreButton button {
+    margin: 40px 0 80px;
+  }
+}
+
+@media (max-width: 680px) {
+  .banner,
+  .infoSectionImg {
+    display: none;
+  }
+
+  .bannerMobile {
+    display: flex;
+    width: 100%;
+  }
+
+  .infoSection p {
+    width: 90%;
+  }
+
+  .interestsText {
+    width: 90%;
+  }
+
+  .openMenu {
+    visibility: visible;
+    cursor: pointer;
+  }
+
+  .navButtons {
+    display: none;
+  }
+
+  footer {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 80px;
+  }
+
+  footer div {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+  }
+
+  footer span {
+    padding-bottom: 10px;
+  }
+  .footerImgs {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+  .footerBar {
+    transform: rotate(90deg);
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .instagramLogo {
+    margin-bottom: 100px;
+  }
+
+  .mobileNav {
+    z-index: 10;
+    background-color: #389cd6;
+    width: 100vw;
+    height: 95%;
+    position: absolute;
+    overflow-y: auto;
+  }
+
+  .mobileNav ul {
+    list-style-type: none;
+    color: white;
+    font-size: 16px;
+    margin: 20px 0px;
+  }
+
+  .mobileNav li {
+    font-weight: 800;
+    cursor: pointer;
+    margin: 60px 10px;
+  }
+}

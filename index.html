@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <title>Intibiome</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <span
+          class="material-symbols-outlined openMenu"
+          onClick="handleOpenMenu('open')"
+        >
+          menu
+        </span>
+
+        <span
+          class="material-symbols-outlined closeMenu"
+          onClick="handleCloseMenu('close')"
+        >
+          close
+        </span>
+      </div>
+      <img src="./assets/Module 1 - Header 970x60025.png" alt="logo image" />
+      <div>
+        <img src="./assets/ic.search.svg" alt="search icon" />
+      </div>
+    </header>
+    <nav>
+      <div class="navButtons">
+        <span
+          onMouseOver="showSubMenu('about') "
+          onMouseLeave="hiddeSubMenu('about')"
+          >about us
+          <span class="material-symbols-outlined"> expand_more </span></span
+        >
+        <span
+          onMouseOver="showSubMenu('products') "
+          onMouseLeave="hiddeSubMenu('products')"
+          >our products
+          <span class="material-symbols-outlined"> expand_more </span></span
+        >
+        <span
+          onMouseOver="showSubMenu('intimateHealth') "
+          onMouseLeave="hiddeSubMenu('intimateHealth')"
+          >intimate health
+          <span class="material-symbols-outlined"> expand_more </span></span
+        >
+        <span>contact us</span>
+      </div>
+      <div class="subMenu">
+        <div
+          class="aboutMenu"
+          onMouseOver="showSubMenu('about') "
+          onMouseLeave="hiddeSubMenu('about')"
+        >
+          <span> brand philosophy </span>
+          <span> product technology </span>
+        </div>
+        <div
+          class="productsMenu"
+          onMouseOver="showSubMenu('products') "
+          onMouseLeave="hiddeSubMenu('products')"
+        >
+          <span> all products </span>
+          <span> intibiome wellness </span>
+          <span> intibiome active </span>
+          <span> intibiome agecare </span>
+        </div>
+        <div
+          class="intimateHealthMenu"
+          onMouseOver="showSubMenu('intimateHealth') "
+          onMouseLeave="hiddeSubMenu('intimateHealth')"
+        >
+          <span> article 1 </span>
+          <span> article 2 </span>
+          <span> article 3 </span>
+          <span> faq </span>
+        </div>
+      </div>
+
+      <div class="mobileNav">
+        <ul>
+          <li>brand philosophy</li>
+          <li>product technology</li>
+          <li>all products</li>
+          <li>intibiome wellness</li>
+          <li>intibiome active</li>
+          <li>intibiome agecare</li>
+          <li>article 1</li>
+          <li>article 2</li>
+          <li>article 3</li>
+          <li>faq</li>
+          <li>contact us</li>
+        </ul>
+      </div>
+    </nav>
+    <section class="infoSection">
+      <img
+        class="infoSectionImg"
+        src="./assets/banner-hero@2x.png"
+        alt="principal banner"
+      />
+      <img
+        class="bannerMobile"
+        src="./assets/banner-intibiome-02.png"
+        alt="principal banner"
+      />
+      <h2 class="helpTitle">we’re here to help</h2>
+      <p>
+        When it comes to caring for our most intimate areas, we’ve lost our
+        connection. <br />
+        <br />
+        Embarrassed, unwilling, or unable to communicate with others, we’re
+        needlessly neglecting the parts of our bodies that need it most.
+        <br />
+        <br />
+        We’re here to help. Providing you with the expertise, knowledge and
+        products you need to feel confident in your personal care.
+      </p>
+
+      <img
+        class="infoSectionIcons"
+        src="./assets/icons@2x.png"
+        alt="info icons"
+      />
+
+      <h2 class="interestsText">
+        whatever your age. whatever your lifestyle. whatever your interests.
+      </h2>
+      <p>
+        Co-created with gynaecologists, our revolutionary products have been
+        expertly developed to support your intimate microbiome and pH balance,
+        and strengthen overall natural health.
+        <br /><br />
+        As the experts in intimate hygiene, we want to bring discussion about
+        intimate wellness care out of the dark and demystify the taboos that
+        surround it.
+      </p>
+    </section>
+    <section class="productSection">
+      <h2>our products</h2>
+      <div class="slider">
+        <div class="products">
+          <div class="wellnessProduct product">
+            <img src="./assets/image mask@2x.png" />
+            <p>intibiome wellness daily intimate wash</p>
+            <span>wellness</span>
+          </div>
+          <div class="activeProduct product">
+            <img src="./assets/image mask-1@2x.png" />
+            <p>intibiome active extra protection intimate wash</p>
+            <span>active</span>
+          </div>
+          <div class="agecareProduct product">
+            <img src="./assets/image mask-2@2x.png" />
+            <p>intibiome agecare dryness relief intimate wash</p>
+            <span>agecare</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <img class="banner" src="assets/Asset 22.png" alt="banner desktop" />
+    <img
+      class="bannerMobile"
+      src="./assets/banner-intibiome-05@2x.png"
+      alt="banner mobile"
+    />
+    <section class="discoveriesSection">
+      <h2>keep up to date with our discoveries</h2>
+      <div class="sliderDiscoveries">
+        <div class="discoveries">
+          <div>
+            <img
+              src="./assets/Screen Shot 2021-02-26 at 17.23.47@2x.png"
+              alt=""
+            />
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </span>
+          </div>
+          <div>
+            <img
+              src="./assets/Screen Shot 2021-02-26 at 17.23.47-1@2x.png"
+              alt=""
+            />
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </span>
+          </div>
+          <div>
+            <img
+              src="./assets/Screen Shot 2021-02-26 at 17.23.47-2@2x.png"
+              alt=""
+            />
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="seemoreButton">
+        <button>see more</button>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <span>contact us</span>
+        <span class="footerBar">|</span> <span>faq</span
+        ><span class="footerBar">|</span> <span>site map</span
+        ><span class="footerBar">|</span> <span>privacy policy</span
+        ><span class="footerBar">|</span> <span>cookies policy</span
+        ><span class="footerBar">|</span>
+        <span>legal notice</span>
+      </div>
+      <div class="footerImgs">
+        <img
+          src="./assets/Image 1@2x.png"
+          style="height: 29px"
+          alt="footer logo"
+        />
+        <img
+          class="instagramLogo"
+          src="./assets/Layer 2.svg"
+          alt="instagram logo"
+        />
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
